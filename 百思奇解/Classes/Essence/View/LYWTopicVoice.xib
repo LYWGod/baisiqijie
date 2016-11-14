@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LYWTopicVoice">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="183"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P66-UC-mmW"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnS-g2-VZc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="IG3-RZ-kkH"/>
+                        <constraint firstAttribute="width" constant="45" id="WFO-3P-026"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                    <connections>
+                        <action selector="play:" destination="iN0-l3-epB" eventType="touchUpInside" id="uFE-sk-Q8e"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-dc-oFe">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6O-2l-a4d">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P66-UC-mmW" secondAttribute="bottom" id="5X5-VY-xRh"/>
+                <constraint firstItem="wnS-g2-VZc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6aH-rO-7bA"/>
+                <constraint firstAttribute="bottom" secondItem="7ej-dc-oFe" secondAttribute="bottom" id="8CI-5g-xkp"/>
+                <constraint firstItem="P66-UC-mmW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HHY-Kw-R5p"/>
+                <constraint firstItem="Y6O-2l-a4d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M4C-Jy-RIS"/>
+                <constraint firstAttribute="trailing" secondItem="Y6O-2l-a4d" secondAttribute="trailing" id="MEu-cm-shy"/>
+                <constraint firstItem="wnS-g2-VZc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pfc-8t-oF4"/>
+                <constraint firstAttribute="trailing" secondItem="7ej-dc-oFe" secondAttribute="trailing" id="a4b-CO-NDw"/>
+                <constraint firstItem="Y6O-2l-a4d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ai8-A5-NdC"/>
+                <constraint firstItem="P66-UC-mmW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lis-dP-b8b"/>
+                <constraint firstAttribute="trailing" secondItem="P66-UC-mmW" secondAttribute="trailing" id="oZD-hU-eao"/>
+                <constraint firstAttribute="bottom" secondItem="Y6O-2l-a4d" secondAttribute="bottom" id="onM-hC-Ryp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MEu-cm-shy"/>
+                    <exclude reference="ai8-A5-NdC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="picture" destination="P66-UC-mmW" id="Yo2-hR-7hg"/>
+                <outlet property="playButton" destination="wnS-g2-VZc" id="RLT-bZ-yJI"/>
+                <outlet property="playcountlab" destination="Y6O-2l-a4d" id="kWS-FA-Emh"/>
+                <outlet property="timelab" destination="7ej-dc-oFe" id="Y8j-bE-isE"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="24.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>

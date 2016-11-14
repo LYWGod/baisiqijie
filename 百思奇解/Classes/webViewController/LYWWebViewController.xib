@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LYWWebViewController">
+            <connections>
+                <outlet property="back" destination="mM0-YX-4TH" id="TgO-wP-nEn"/>
+                <outlet property="forWard" destination="Cx2-ng-3sC" id="Of6-GP-EIE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="ihD-TD-NUZ" id="d0P-3C-TTN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihD-TD-NUZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FZA-Ka-l0H"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xy1-Ob-1Pf">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem image="navigationButtonReturn" id="mM0-YX-4TH">
+                            <connections>
+                                <action selector="backBarButtonItem:" destination="-1" id="76P-dr-SqW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem image="navigButtonReturn" id="Cx2-ng-3sC">
+                            <connections>
+                                <action selector="forwardBarButtonItem:" destination="-1" id="XuE-gF-a1w"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="cw0-gB-Dex"/>
+                        <barButtonItem systemItem="refresh" id="WRB-9J-LdA">
+                            <connections>
+                                <action selector="refresh:" destination="-1" id="hzQ-VO-54l"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ihD-TD-NUZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6qE-cf-wAh"/>
+                <constraint firstAttribute="trailing" secondItem="ihD-TD-NUZ" secondAttribute="trailing" id="ANN-hb-N5t"/>
+                <constraint firstAttribute="bottom" secondItem="ihD-TD-NUZ" secondAttribute="bottom" constant="44" id="Koe-YN-wbK"/>
+                <constraint firstItem="ihD-TD-NUZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ojo-fL-hXA"/>
+                <constraint firstAttribute="trailing" secondItem="Xy1-Ob-1Pf" secondAttribute="trailing" id="ePb-1O-O3h"/>
+                <constraint firstItem="Xy1-Ob-1Pf" firstAttribute="top" secondItem="ihD-TD-NUZ" secondAttribute="bottom" id="igd-Ti-bMm"/>
+                <constraint firstAttribute="bottom" secondItem="Xy1-Ob-1Pf" secondAttribute="bottom" id="r6k-2L-SRs"/>
+                <constraint firstItem="Xy1-Ob-1Pf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vhE-rP-7mu"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Koe-YN-wbK"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigButtonReturn" width="15" height="21"/>
+        <image name="navigationButtonReturn" width="15" height="21"/>
+    </resources>
+</document>

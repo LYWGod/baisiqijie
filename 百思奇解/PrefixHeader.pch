@@ -1,0 +1,72 @@
+//
+//  PrefixHeader.pch
+//  百思奇解
+//
+//  Created by LYW on 2016/10/15.
+//  Copyright © 2016年 LYW. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+//类扩展
+#import "UIView+LYWExtension.h"
+#import "UIBarButtonItem+LYWExtension.h"
+#import "UITextField+LYWExtension.h"
+#import "NSString+LYWExtension.h"
+#import "UIImage+EXtension.h"
+#import "UIImageView+Extension.h"
+#import "NSString+DateExtension.h"
+#import "NSDate+Extension.h"
+#import "NSCalendar+Extension.h"
+
+
+
+//常量
+#import "LYWConst.h"
+
+#ifdef DEBUG
+#define LYWLog(...) NSLog(__VA_ARGS__)
+#else
+#define LYWLog(...)
+#endif
+
+#define LYWLogFunc LYWLog(@"%s",__func__);
+
+
+
+/* 颜色 */
+#define LYWARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+
+#define LYWColor(r, g, b) LYWARGBColor(255, (r), (g), (b))
+
+#define LYWRandomColor LYWColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define LYWrayColor(v) LYWColor((v), (v), (v))
+#define LYWCommonBgColor LYWrayColor(206)
+
+
+/* 屏幕有关 */
+#define LYWKscreenWidth [UIScreen mainScreen].bounds.size.width
+#define LYWKscreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define iPone6   ([UIScreen mainScreen].bounds.size.height == 667)
+#define iPone6P   ([UIScreen mainScreen].bounds.size.height == 736)
+#define iPone5   ([UIScreen mainScreen].bounds.size.height == 568)
+#define iPone4  ([UIScreen mainScreen].bounds.size.height == 480)
+
+
+#define LYWWrite(responseObject,filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/lyw/Desktop/%@.plist",filename] atomically:YES];
+
+
+#endif
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
