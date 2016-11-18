@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - DACircularProgress (2.3.1)
+  - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - pop (1.0.9)
@@ -54,6 +55,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
   - DACircularProgress (~> 2.3.1)
+  - Masonry (~> 1.0.2)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
   - pop (~> 1.0.9)
@@ -64,6 +66,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
@@ -71,6 +74,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: d1608bb9a2c36e7184346e9aa349d8ea955d2771
+PODFILE CHECKSUM: bfe55e4eb1b98671d3a1538b63ae5a68a24f6fdc
 
 COCOAPODS: 1.1.1

@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.title = self.title;
+    self.navigationController.title = self.titles;
     
     NSURLRequest *requst = [NSURLRequest requestWithURL:[NSURL URLWithString:_url]];
     [self.webView loadRequest:requst];

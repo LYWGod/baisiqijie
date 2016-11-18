@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 

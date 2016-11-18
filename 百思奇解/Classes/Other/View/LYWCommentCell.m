@@ -52,7 +52,6 @@
         self.voiceBtn.hidden = NO;
         [self.voiceBtn setTitle:[NSString stringWithFormat:@"%zd''", commentModel.voicetime] forState:UIControlStateNormal];
         
-        
     } else {
         self.voiceBtn.hidden = YES;
     }

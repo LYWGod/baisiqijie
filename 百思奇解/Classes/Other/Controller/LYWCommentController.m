@@ -16,6 +16,7 @@
 #import "LYWRefreshFooter.h"
 #import "LYWCommentCell.h"
 #import "LYWTopicCell.h"
+#import "LYWHeardView.h"
 
 @interface LYWCommentController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,6 +35,7 @@
 
 @implementation LYWCommentController
 static NSString * const commentID = @"LYWCommentCell";
+static NSString * const HeardFootView = @"LYWHeardView";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,6 +58,11 @@ static NSString * const commentID = @"LYWCommentCell";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LYWCommentCell class]) bundle:nil] forCellReuseIdentifier:commentID];
+    [self.tableView registerClass:[LYWHeardView class] forHeaderFooterViewReuseIdentifier:HeardFootView];
+    
+    // 每一组头部控件的高度
+    self.tableView.sectionHeaderHeight = [UIFont systemFontOfSize:15].lineHeight + LYWMargin;
+    
     //自动计算高度
     self.tableView.estimatedRowHeight = 1000;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -73,7 +80,7 @@ static NSString * const commentID = @"LYWCommentCell";
     cell.frame = CGRectMake(0, 0, LYWKscreenWidth, self.topicModel.cellHeight);
     [view addSubview:cell];
     //这个父控件的高度就等于cell的高度
-    view.LYW_H = self.topicModel.cellHeight + LYWMargin;
+    view.LYW_H = self.topicModel.cellHeight;
     
     self.tableView.tableHeaderView = view;
 }
@@ -197,20 +204,21 @@ static NSString * const commentID = @"LYWCommentCell";
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    LYWHeardView *heard = [tableView dequeueReusableHeaderFooterViewWithIdentifier:HeardFootView];
+    
     // 第0组 && 有最热评论数据
     if (section == 0 && self.hotCommentArr.count) {
-        return  @"最热评论";
+        heard.textLabel.text =  @"最热评论";
     } else { // 其他情况
-        return @"最新评论";
+        heard.textLabel.text = @"最新评论";
     }
+    
+    return heard;
+    
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 44;
-}
 
 - (void)keyboardWillChangeFrame:(NSNotification *)note
 {

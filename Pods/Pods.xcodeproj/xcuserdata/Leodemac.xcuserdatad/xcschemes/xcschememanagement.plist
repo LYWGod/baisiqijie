@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>POP+MCAnimate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,22 +62,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1CAC58DC46CD34E0FF8E2B4371C6D775</key>
+		<key>1E832C59C31613A1AADFAB224ECA695D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>553701E44E0F89EC7796BBEFD57C00E4</key>
+		<key>2D8FA1DB7547BF7256DE520751ECC945</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E4E9BA0C862EB0015A194B62CA47954</key>
+		<key>58BA9A3CC9A6E5CA952A0353E7E210EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88B725F67DB86F1B6228766DEF90F9C1</key>
+		<key>612313F6AADA0858CA07BC2639729F97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A24770E5E00241330AF3358D6191EFB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -88,11 +103,6 @@
 			<true/>
 		</dict>
 		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EFDE2EA65536A3BCC02FB6AFDD19618E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

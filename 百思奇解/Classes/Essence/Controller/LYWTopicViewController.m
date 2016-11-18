@@ -17,6 +17,7 @@
 #import "LYWTopicCell.h"
 #import "LYWCommentController.h"
 
+
 @interface LYWTopicViewController ()
 
 @property (nonatomic,strong) NSMutableArray<LYWTopic *> *dataSource;
@@ -63,8 +64,7 @@ static NSString *const TopicCellId = @"LYWTopicCell";
     [self.tableView.mj_header beginRefreshing];
     
     self.tableView.mj_footer = [LYWRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
-    self.tableView.mj_footer.hidden = YES;
-
+    
 }
 
 /**
@@ -86,6 +86,7 @@ static NSString *const TopicCellId = @"LYWTopicCell";
         weakSelf.dataSource = [LYWTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [weakSelf.tableView reloadData];
         [weakSelf.tableView.mj_header endRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [weakSelf.tableView.mj_header endRefreshing];
     }];
@@ -104,11 +105,13 @@ static NSString *const TopicCellId = @"LYWTopicCell";
     parameters[@"maxtime"] = _maxtime;
     __weak typeof(self) weakSelf = self;
     [self.manager GET:LYW_Url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
         _maxtime = responseObject[@"info"][@"maxtime"];
         NSArray *array = [LYWTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [weakSelf.dataSource addObjectsFromArray:array];
         [weakSelf.tableView reloadData];
         [weakSelf.tableView.mj_footer endRefreshing];
+    
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [weakSelf.tableView.mj_footer endRefreshing];
     }];
@@ -170,19 +173,5 @@ static NSString *const TopicCellId = @"LYWTopicCell";
 }
 
 
-//手动拖拽
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    if (self.dataSource.count) {
-        
-        LYWTopic *topicModel = self.dataSource.firstObject;
-        if ( topicModel.height > LYWKscreenHeight) {
-            //有数据
-            self.tableView.mj_footer.hidden = NO;
-        }
-        
-    }
-    
-}
 
 @end

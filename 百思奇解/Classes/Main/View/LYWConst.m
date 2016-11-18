@@ -16,3 +16,5 @@ CGFloat const Margin = 8;
 NSString *const Man = @"m";
 
 NSString *const Women = @"f";
+
+NSString *const WkwebView = @"WkwebView";

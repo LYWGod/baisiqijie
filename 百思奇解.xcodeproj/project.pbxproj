@@ -98,9 +98,11 @@
 		7A585CB21DD477A600AD9315 /* libVitamio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A585CAF1DD477A600AD9315 /* libVitamio.a */; };
 		7A585CBE1DD477C100AD9315 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 7A585CBD1DD477C100AD9315 /* CHANGELOG.md */; };
 		7A585CC01DD477DD00AD9315 /* Vitamio_SDK_for_iOS_User_Manual.md in Sources */ = {isa = PBXBuildFile; fileRef = 7A585CBF1DD477DD00AD9315 /* Vitamio_SDK_for_iOS_User_Manual.md */; };
+		7A72D8361DD9B18E00653563 /* LYWHeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A72D8351DD9B18E00653563 /* LYWHeardView.m */; };
 		7A9828B31DD985630013580F /* LYWAdVertisementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9828B11DD985630013580F /* LYWAdVertisementController.m */; };
 		7A9828B41DD985630013580F /* LYWAdVertisementController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A9828B21DD985630013580F /* LYWAdVertisementController.xib */; };
 		7A9828BA1DD9873A0013580F /* LYWAdmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9828B91DD9873A0013580F /* LYWAdmodel.m */; };
+		7AA659F01DDAAAD800B6E3C6 /* LYWWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA659EF1DDAAAD800B6E3C6 /* LYWWKViewController.m */; };
 		93F4ABB43E35F54D9B58016B /* libPods-百思奇解.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B06114C380F26C87E5AD048A /* libPods-百思奇解.a */; };
 /* End PBXBuildFile section */
 
@@ -284,11 +286,15 @@
 		7A585CBC1DD477B500AD9315 /* VSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSingleton.h; sourceTree = "<group>"; };
 		7A585CBD1DD477C100AD9315 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7A585CBF1DD477DD00AD9315 /* Vitamio_SDK_for_iOS_User_Manual.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Vitamio_SDK_for_iOS_User_Manual.md; sourceTree = "<group>"; };
+		7A72D8341DD9B18E00653563 /* LYWHeardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWHeardView.h; sourceTree = "<group>"; };
+		7A72D8351DD9B18E00653563 /* LYWHeardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWHeardView.m; sourceTree = "<group>"; };
 		7A9828B01DD985630013580F /* LYWAdVertisementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWAdVertisementController.h; sourceTree = "<group>"; };
 		7A9828B11DD985630013580F /* LYWAdVertisementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWAdVertisementController.m; sourceTree = "<group>"; };
 		7A9828B21DD985630013580F /* LYWAdVertisementController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYWAdVertisementController.xib; sourceTree = "<group>"; };
 		7A9828B81DD9873A0013580F /* LYWAdmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWAdmodel.h; sourceTree = "<group>"; };
 		7A9828B91DD9873A0013580F /* LYWAdmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWAdmodel.m; sourceTree = "<group>"; };
+		7AA659EE1DDAAAD800B6E3C6 /* LYWWKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYWWKViewController.h; sourceTree = "<group>"; };
+		7AA659EF1DDAAAD800B6E3C6 /* LYWWKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWWKViewController.m; sourceTree = "<group>"; };
 		7F8E72F525144C6F56E78C99 /* Pods-百思奇解.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思奇解.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思奇解/Pods-百思奇解.release.xcconfig"; sourceTree = "<group>"; };
 		B06114C380F26C87E5AD048A /* libPods-百思奇解.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思奇解.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C6F1244A7091232C8E384E /* Pods-百思奇解.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思奇解.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思奇解/Pods-百思奇解.debug.xcconfig"; sourceTree = "<group>"; };
@@ -738,6 +744,8 @@
 				50A90BD51DD812170094A794 /* LYWCommentCell.h */,
 				50A90BD61DD812170094A794 /* LYWCommentCell.m */,
 				50A90BD71DD812170094A794 /* LYWCommentCell.xib */,
+				7A72D8341DD9B18E00653563 /* LYWHeardView.h */,
+				7A72D8351DD9B18E00653563 /* LYWHeardView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -748,6 +756,8 @@
 				50EF59941DC474F000C3A9A2 /* LYWWebViewController.h */,
 				50EF59951DC474F000C3A9A2 /* LYWWebViewController.m */,
 				50EF59961DC474F000C3A9A2 /* LYWWebViewController.xib */,
+				7AA659EE1DDAAAD800B6E3C6 /* LYWWKViewController.h */,
+				7AA659EF1DDAAAD800B6E3C6 /* LYWWKViewController.m */,
 			);
 			path = webViewController;
 			sourceTree = "<group>";
@@ -1039,6 +1049,7 @@
 				50C9BD691DCF46CC007DA12D /* LYWTopicVideo.m in Sources */,
 				50EF59921DC4704500C3A9A2 /* Foundation+Log.m in Sources */,
 				50A90BD31DD8073B0094A794 /* LYWCommentController.m in Sources */,
+				7AA659F01DDAAAD800B6E3C6 /* LYWWKViewController.m in Sources */,
 				50BB7C2A1DCD81CC00F2B4D2 /* LYWVoiceViewController.m in Sources */,
 				50BB7CC61DCD9C5100F2B4D2 /* LYWCustomTabBar.m in Sources */,
 				50B806A11DB3336F00346C4B /* LYWSettingViewController.m in Sources */,
@@ -1079,6 +1090,7 @@
 				50BB7C241DCD81A600F2B4D2 /* LYWAllViewController.m in Sources */,
 				7A585C421DD40ED100AD9315 /* LYWTopicViewController.m in Sources */,
 				50CFB3411DCDF9E600DECDA0 /* LYWSessionManager.m in Sources */,
+				7A72D8361DD9B18E00653563 /* LYWHeardView.m in Sources */,
 				7A585CBE1DD477C100AD9315 /* CHANGELOG.md in Sources */,
 				50BB7CC71DCD9C5100F2B4D2 /* LYWConst.m in Sources */,
 				50BB7CC31DCD9C5100F2B4D2 /* UIBarButtonItem+LYWExtension.m in Sources */,

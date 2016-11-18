@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *playcountlab;
 @property (weak, nonatomic) IBOutlet UILabel *timeLab;
 
+
 @end
 
 @implementation LYWTopicVideo
@@ -44,8 +45,9 @@
 - (IBAction)play:(UIButton *)sender
 {
     //iOS9之前的做法
-    MPMoviePlayerViewController *movieVC = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:self.topicModel.videouri]];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentMoviePlayerViewControllerAnimated:movieVC];
+//    MPMoviePlayerViewController *movieVC = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:self.topicModel.videouri]];
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentMoviePlayerViewControllerAnimated:movieVC];
+    
 }
 
 

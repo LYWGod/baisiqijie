@@ -13,6 +13,7 @@
 #import "LYWSquareModel.h"
 #import "LYWSquareBtn.h"
 #import "LYWWebViewController.h"
+#import "LYWWKViewController.h"
 @interface LYWFootView()
 
 
@@ -82,8 +83,13 @@
         
         LYWWebViewController *web = [[LYWWebViewController alloc] init];
         web.url = btn.squareModel.url;
-        web.title = btn.currentTitle;
+        web.titles = btn.currentTitle;
         [nav pushViewController:web animated:YES];
+        
+//        LYWWKViewController *web = [[LYWWKViewController alloc] init];
+//        web.url = btn.squareModel.url;
+//        web.title = btn.currentTitle;
+//        [nav pushViewController:web animated:YES];
     }
     else if ([model.url hasPrefix:@"mod"]) {
         if ([model.url hasSuffix:@"BDJ_To_Check"]) {

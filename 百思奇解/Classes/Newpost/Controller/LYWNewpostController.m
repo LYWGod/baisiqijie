@@ -18,7 +18,7 @@
     [super viewDidLoad];
 
     LYWLogFunc
-    self.view.backgroundColor = LYWRandomColor;
+    self.view.backgroundColor = LYWCommonBgColor;
 
 
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimage:@"MainTagSubIcon" highlightedImage:@"MainTagSubIconClick" target:self action:@selector(MainTagSubIconClick)];

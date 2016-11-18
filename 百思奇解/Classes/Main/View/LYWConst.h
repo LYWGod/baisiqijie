@@ -15,7 +15,9 @@ UIKIT_EXTERN CGFloat const LYWMargin;
  */
 UIKIT_EXTERN CGFloat const LYWSmallMargin;
 
-
+/**
+ *  请求路径
+ */
 UIKIT_EXTERN NSString *const LYW_Url;
 
 /**
@@ -23,6 +25,18 @@ UIKIT_EXTERN NSString *const LYW_Url;
  */
 UIKIT_EXTERN CGFloat const Margin;
 
+/**
+ *  评论页的男
+ */
 UIKIT_EXTERN NSString *const Man;
 
+/**
+ *  评论页的女
+ */
 UIKIT_EXTERN NSString *const Women;
+
+/**
+ *  webView的监听
+ */
+UIKIT_EXTERN NSString *const WkwebView;
+

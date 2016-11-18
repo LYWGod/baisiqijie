@@ -13,6 +13,14 @@
 - (void)prepare
 {
     [super prepare];
+    // 是否需要自动隐藏
+    self.automaticallyHidden = YES;
+    
+    // 是否需要自动刷重新
+    self.automaticallyRefresh = NO;
+    
+    // 设置文字
+    self.stateLabel.text = @"小蓝帮你加载";
     self.stateLabel.textColor = [UIColor redColor];
 }
 

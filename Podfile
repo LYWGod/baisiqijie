@@ -9,6 +9,7 @@ def pods
   pod 'DACircularProgress', '~> 2.3.1'
   pod 'pop', '~> 1.0.9'
   pod 'POP+MCAnimate', '~> 2.0.1'
+  pod 'Masonry', '~> 1.0.2'
 end
 target '百思奇解' do
   pods
