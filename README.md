@@ -1,9 +1,12 @@
 # baisiqijie
 高度仿写百思不得姐项目，实现精华，新帖，发布，关注，我的五大功能模块，运用了很多技术。 使用技术：MVC设计模式，使用纯代码和Xib混合开发，AutoLayout做UI布局，首页精华模块充分使用父子控制器，音频视频的播放，评论详情界面，发布集成pop动画，关注界面充分利用Xib的优势，使用SDWebImage进行图片加载，SVProessHUD进行遮盖提示，清除缓存功能，UIWebView进行网页加载等技术
+
 通过点击来切换小模块
 ![baisi.gif](http://upload-images.jianshu.io/upload_images/2406962-ec0c8eeb24c2ed6a.gif?imageMogr2/auto-orient/strip)
+
 通过手势滑动来切换小模块
 ![allhahha.gif](http://upload-images.jianshu.io/upload_images/2406962-19c7f473898373a1.gif?imageMogr2/auto-orient/strip)
+
 
 查看每个不同的cell的评论
 ![zz.gif](http://upload-images.jianshu.io/upload_images/2406962-645190610c76607f.gif?imageMogr2/auto-orient/strip)
